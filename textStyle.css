@@ -1,0 +1,142 @@
+
+#maintitle{
+	border-bottom: 5px solid black;
+	font-size: 3em;
+	font-family: Times New Roman;
+}
+#subtitle{
+	border-bottom: 5px solid black;
+	font-size: .5em;
+	font-family: Times New Roman;
+	margin-bottom: 30px;
+}
+table.center{
+	max-width: 800px;
+}
+
+form{
+	width:700px;
+
+}
+#personaltz{
+	font-size:1.5em;
+	padding-bottom: 20px;
+}
+#chooseLine{
+	border-top: 2px solid black;
+	margin-bottom: 30px;
+	font-size: 1.5em;
+	border-bottom: 2px solid black;
+	padding:20px;
+}
+.zoneName{
+	font-size: 1em;
+	padding:20px;
+	width="104";
+	text-align: center;
+	border:2px solid black;
+	background:white;
+}
+.imgrow{
+	border:2px solid black;
+	background:white;
+}
+.tooltip{
+	display: inline;
+	position: relative;
+}
+.tooltip:hover:after{
+	background: white;
+	border-radius: 5px;
+	bottom: 26px;
+	color: black;
+	content: attr(title);
+	left: 80%;
+	border: 1px solid black;
+	padding: 5px 15px;
+	position: absolute;
+	width: 175px;
+}
+.contactus{
+	text-align:left;
+	font-size:1.2em;
+	border-bottom:2px solid black;
+}
+.row{
+	border-bottom:2px solid black;
+}
+input:hover {
+	border-top: 1px solid yellow;
+	border-left: 1px solid yellow;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+}
+input:focus {
+	border-top: 1px solid yellow;
+	border-left: 1px solid yellow;
+	border-bottom: 1px solid red;
+	border-right: 1px solid red;
+}
+.boxBorder {
+	background-color: rgba(255, 255, 255, .6);
+	border:1px solid black;
+	padding:4px;
+	margin:4px;
+}
+optgroup[label] {
+	color:red;
+	font-style:italic;
+	font-weight:bold;
+
+}
+.formset{
+	font-size:1.2em;
+}
+.validate{
+	font-size:.75em;
+	color: red;
+}
+
+#stCh{
+	position: absolute;
+	right: 1cm;
+	top: 1cm;
+}
+#textStyle{
+	position: absolute;
+	right: 1cm;
+	top: 1.7cm;	
+}
+img{
+	visibility: hidden;
+}
+img[alt]{
+	visibility: visible;
+}
+@keyframes scale1{
+	0%{
+	transform: scale(1, 1);
+	}
+	100%{
+	transform: scale(1.5, 1.5);
+	}
+}
+td.zoneName:hover{
+	animation-name: scale1;
+	animation-duration: 1s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+a{
+	color:black;
+}
+.menu{
+	color:black;
+	width:150px;
+	text-align:center;
+	background:white;
+	padding:8px;
+	margin:4px;
+}
