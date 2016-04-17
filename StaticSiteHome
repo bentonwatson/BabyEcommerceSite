@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		
+		<title>
+			home page
+		</title> 
+		<script type="text/javascript" src="scripts.js"></script>
+		<link onload="styleHold()" id="style" type="text/css" rel="Stylesheet" href="style1.css" media="screen"></link>
+		
+		
+	</head>
+	<body onload="usertz()">
+		<h1 id="maintitle">US_TimeZone_Eats<input id="stCh" type="button" value="Change Style" onclick="styleChange()"/><input id="textStyle" type="button" value="Text Style" onclick="styleText()"/></br>
+		<span id="subtitle">Discover Favorite Recipes in the US by TimeZone</span></h1>
+		<h2 id="personaltz">Your TimeZone is <span id="usertz"></span> and the Current Time is <span id="userdt"></span></h2>
+		<table class="center">
+			<tr>
+				<td id="chooseLine" colspan="5">Choose the TimeZone you would like to explore!</td>
+			</tr>
+			<tr>
+				<td class="zoneName" ><a href="alaska.html"/>Alaskan</td>
+				<td class="zoneName"><a href="pacific.html"/>Pacific</td>
+				<td class="zoneName"><a href="mountain.html"/>Mountain</td>
+				<td class="zoneName"><a href="central.html"/>Central</td>
+				<td class="zoneName"><a href="eastern.html"/>Eastern</td>
+			</tr>
+			<tr>
+				<td class="imgrow" rowspan="1"><a title="The Alaskan Zone includes only the state of Alaska." class="tooltip"><img src="images/AL_img.jpg" alt="Alaska"></img></a></td>
+				<td class="imgrow" rowspan="3"><a title="The Pacific Zone includes California, Nevada, Oregon, Washington, Arizona (half year) and Northern Idaho" class="tooltip"><img src="images/PST_img.jpg" alt="Pacific TimeZone Region"></img></a></td>
+				<td class="imgrow" rowspan="3"><a title="The Mountain Zone includes Montana, Southern Idaho, Utah, Colorado, New Mexico, Arizona (half year), Wyoming, and the Western edge of South Dakota, North Dakota, and Nebraska" class="tooltip"><img src="images/MST_img.jpg" alt="Mountain TimeZone Region"></img></a></td>
+				<td class="imgrow" rowspan="3"><a title="The Central Zone includes Minnesota, Wisconsin, Iowa, Illinois, Missouri, Kansas, Oklahoma, Texas, Arkansas, Louisiana, Mississippi, Alabama, Western Tennessee and Kentucky, and the Eastern majority of North Dakota, South Dakota, and Nebraska. " class="tooltip"><img src="images/CST_img.jpg" alt="Central TimeZone Region"></img></a></td>
+				<td class="imgrow" rowspan="3"><a title="The Eastern Zone includes Michigan, Indiana, Ohio, Eastern Kentucky and Tennessee, Georgia, Florida, South Carolina, North Carolina, Virginia, West Virginia, Maryland, Pennsylvania, New York, Maine, Vermont, New Hampshire, Massachusetts, Rhode Island, Connecticut, New Jersey, Delaware, and District of Columbia" class="tooltip"><img src="images/EST_img.jpg" alt="Eastern TimeZone Region"></img></a></td>
+			</tr>
+			<tr>
+				<td class="zoneName"><a href="hawaii.html"/>Hawaiian</td>
+			</tr>
+			<tr>
+				<td class="imgrow" rowspan="1"><a title="The Hawaiian Zone includes only the state of Hawaii" class="tooltip"><img src="images/HI_img.jpg" alt="Hawaii"></img></a></td>
+			</tr>
+		</table>
+		<p id="foot"><a class="inText" href="sitemap.html">Site Map</a>	<a class="inText" href="register.html">Register</a>	<a class="inText" href="contactus.html">Contact Us</a></p>
+	</body>
+
+</html>

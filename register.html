@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		
+		<title>
+			registration page
+		</title>
+		<script type="text/javascript" src="scripts.js"></script>
+		<link onload="styleHold()" id="style" type="text/css" rel="Stylesheet" href="style1.css" media="screen"></link>
+		
+		
+	</head>
+	<body onload="usertz()">
+		<h1 id="maintitle">US_TimeZone_Eats<input id="stCh" type="button" value="Change Style" onclick="styleChange()"/><input id="textStyle" type="button" value="Text Style" onclick="styleText()"/></br>
+		<span id="subtitle">Discover Favorite Recipes in the US by TimeZone</span></h1>
+		<h2 id="personaltz" >Your TimeZone is <span id="usertz"></span> and the Current Time is <span id="userdt"></span>
+		<table class="center" >
+			<tr>
+				<td colspan="1" class="menuCenter">
+					<select class="menu" size="1" onchange="select(this)">
+						<option>TimeZones</option>
+						<option value="alaska.html">Alaska</option>
+						<option value="hawaii.html">Hawaii</option>
+						<option value="pacific.html">Pacific</option>
+						<option value="mountain.html">Mountain</option>
+						<option value="central.html">Central</option>
+						<option value="eastern.html">Eastern</option>
+					</select>
+				</td>
+				<td colspan="1" class="menuCenter">
+					<select class="menu" size="1" onchange="select(this)">
+						<option>Recipes</option>
+						<option value="recipes/salmon.html">Barbecued Salmon</option>
+						<option value="recipes/ahi.html">Poke</option>
+						<option value="recipes/spam.html">Spam musubi</option>
+					</select>
+				</td>
+				<td colspan="1" class="menuCenter">
+					<select class="menu" size="1" onchange="select(this)">
+						<option>Ingredients</option>
+						<option value="seafood.html">Seafood</option>
+						<option value="spamIng.html">Spam</option>
+
+					</select>
+				</td>
+			</tr>
+		</table></h2>
+		<table class="center">
+			<tr>
+				<td id="chooseLine" colspan="3">Please register to be added to our email list!</td>
+			</tr>
+			<tr><td colspan="3">
+		<form id="formSet" action="saveit.txt" onsubmit="return chkSubmit()" onreset="return chkReset()" onkeypress="return event.keyCode != 13">
+		<fieldset id="fieldset1"><legend class="formset">Personal Information	<span class="validate">* Required Fields</span></legend>
+			<label for="name">Name: </label><input id="name" class="boxBorder" type="text" name="FIRST"/>
+				<input id="last" class="boxBorder" type="text" name="LAST" onkeyup="formfocus()"/><span class="validate">*</span><br />
+			<label>Address: <input id="add1" class="boxBorder" type="text" name="ADDRESS" size="50"/></label><span class="validate">*</span><br />
+			<label>City: <input id="add2" class="boxBorder" type="text" name="LOCALITY" size="50"/></label><span class="validate">*</span><br />
+			<label for="state">State/Province: </label>
+				<select id="state" class="boxBorder" name="REGION" size="1">
+					<option value="zero">Choose</option>
+					<optgroup label="USA">
+					<option value="AL">Alabama (AL)</option>
+					<option value="AK">Alaska (AK)</option>
+					<option value="AZ">Arizona (AZ)</option>
+					<option value="AR">Arkansas (AR)</option>
+					<option value="CA">California (CA)</option>
+					<option value="CO">Colorado (CO)</option>
+					<option value="CT">Connecticut (CT)</option>
+					<option value="DE">Delaware (DE)</option>
+					<option value="FL">Florida (FL)</option>
+					<option value="GA">Georgia (GA)</option>
+					<option value="HI">Hawaii (HI)</option>
+					<option value="ID">Idaho (ID)</option>
+					<option value="IL">Illinois (IL)</option>
+					<option value="IN">Indiana (IN)</option>
+					<option value="IA">Iowa (IA)</option>
+					<option value="KS">Kansas (KS)</option>
+					<option value="KY">Kentucky (KY)</option>
+					<option value="LA">Louisiana (LA)</option>
+					<option value="ME">Maine (ME)</option>
+					<option value="MD">Maryland (MD)</option>
+					<option value="MA">Massachusetts (MA)</option>
+					<option value="MI">Michigan (MI)</option>
+					<option value="MN">Minnesota (MN)</option>
+					<option value="MS">Mississippi (MS)</option>
+					<option value="MO">Missouri (MO)</option>
+					<option value="MT">Montana (MT)</option>
+					<option value="NE">Nebraska (NE)</option>
+					<option value="NV">Nevada (NV)</option>
+					<option value="NH">New Hampshire (NH)</option>
+					<option value="NJ">New Jersey (NJ)</option>
+					<option value="NM">New Mexico (NM)</option>
+					<option value="NY">New York (NY)</option>
+					<option value="NC">North Carolina (NC)</option>
+					<option value="ND">North Dakota (ND)</option>
+					<option value="OH">Ohio (OH)</option>
+					<option value="OK">Oklahoma (OK)</option>
+					<option value="OR">Oregon (OR)</option>
+					<option value="PA">Pennsylvania (PA)</option>
+					<option value="RI">Rhode Island (RI)</option>
+					<option value="SC">South Carolina (SC)</option>
+					<option value="SD">South Dakota (SD)</option>
+					<option value="TN">Tennessee (TN)</option>
+					<option value="TX">Texas (TX)</option>
+					<option value="UT">Utah (UT)</option>
+					<option value="VT">Vermont (VT)</option>
+					<option value="VA">Virginia (VA)</option>
+					<option value="WA">Washington (WA)</option>
+					<option value="WV">West Virginia (WV)</option>
+					<option value="WI">Wisconsin (WI)</option>
+					<option value="WY">Wyoming (WY)</option>
+					</optgroup>
+
+					<optgroup label="CANADA">
+					<option value="AB">Alberta (AB)</option>
+					<option value="AB">Alberta (AB)</option>
+					<option value="BC">British Columbia (BC)</option>
+					<option value="MB">Manitoba (MB)</option>
+					<option value="NB">New Brunswick (NB)</option>
+					<option value="NL">New Foundland (NL)</option>
+					<option value="NS">Nova Scotia (NS)</option>
+					<option value="ON">Ontario (ON)</option>
+					<option value="PE">Prince Edward Island (PE)</option>
+					<option value="QC">Quebec (QC)</option>
+					<option value="SK">Saskatchewan (SL)</option>
+					</optgroup>
+				</select><span class="validate">*</span>
+			<br />
+			<label>ZIP/Postal Code: <input id="post" class="boxBorder" type="text" name="POSTAL" size="20" onkeyup="chkPost()"/></label><span class="validate" id="postchk">* Invalid Postal Code</span><br />
+			<label>Phone: <input id="phone" class="boxBorder" type="text" name="PHONE" size="30" onkeyup="chkPhone()"/></label><span class="validate" id="phonechk">* Invalid Phone Number</span><br />
+			<label>Email: <input id="email" class="boxBorder" type="text" name="EMAIL" size="30" onkeyup="chkEmail()"/></label><span class="validate" id="emailchk">* Invalid Email Format</span><br />
+		</fieldset>
+		<p class="formset">Subscribe to our Mailing List: 
+			<input id="yes" type="radio" /><label for="yes">Yes</label>
+			<input id="no" type="radio" /><label for="no">No</label><span class="validate"> *</span><br />
+			</p>
+		<fieldset id="fieldset2"><legend class="formset">Mailing List Subscriptions</legend>
+			<input id="pressRelease" type="checkbox" /><label for="pressRelease">Corporate Press Release Emails</label><br />
+			<input id="siteUpdates" type="checkbox" /><label for="siteUpdates">Notification of Important Site Updates</label><br />
+			<input id="newRecipes" type="checkbox" /><label for="newRecipes">Notification of New Recipes in your TimeZone</label><br />
+		</fieldset>
+		<input type="submit" value="Send" id="send"/><input type="reset" value="Reset" id="reset" />
+		</form>
+		<p id="foot"><a class="inText" href="index.html">Home</a>	<a class="inText" href="sitemap.html">Site Map</a>	<a class="inText" href="register.html">Register</a>	<a class="inText" href="contactus.html">Contact Us</a></p>
+		</td></tr>
+		</table>
+	</body>
+
+</html>

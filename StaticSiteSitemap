@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		
+		<title>
+			sitemap page
+		</title>
+		<script type="text/javascript" src="scripts.js"></script>
+		<link onload="styleHold()" id="style" type="text/css" rel="Stylesheet" href="style1.css" media="screen"></link>
+		
+		
+	</head>
+	<body onload="usertz()">
+		<h1 id="maintitle">US_TimeZone_Eats<input id="stCh" type="button" value="Change Style" onclick="styleChange()"/><input id="textStyle" type="button" value="Text Style" onclick="styleText()"/></br>
+		<span id="subtitle">Discover Favorite Recipes in the US by TimeZone</span></h1>
+		<h2 id="personaltz" >Your TimeZone is <span id="usertz"></span> and the Current Time is <span id="userdt"></span>
+		<table class="center" >
+			<tr>
+				<td colspan="1">
+					<select class="menu" size="1" onchange="select(this)">
+						<option>TimeZones</option>
+						<option value="alaska.html">Alaska</option>
+						<option value="hawaii.html">Hawaii</option>
+						<option value="pacific.html">Pacific</option>
+						<option value="mountain.html">Mountain</option>
+						<option value="central.html">Central</option>
+						<option value="eastern.html">Eastern</option>
+					</select>
+				</td>
+				<td colspan="1">
+					<select class="menu" size="1" onchange="select(this)">
+						<option>Recipes</option>
+						<option value="recipes/salmon.html">Barbecued Salmon</option>
+						<option value="recipes/ahi.html">Poke</option>
+						<option value="recipes/spam.html">Spam musubi</option>
+					</select>
+				</td>
+				<td colspan="1">
+					<select class="menu" size="1" onchange="select(this)">
+						<option>Ingredients</option>
+						<option value="seafood.html">Seafood</option>
+						<option value="spamIng.html">Spam</option>
+
+					</select>
+				</td>
+			</tr>
+		</table></h2>
+		<table class="center">
+			<tr>
+				<td id="chooseLine" colspan="3">The Site Map is an efficient way to explore!</td>
+			</tr>
+
+			<tr>
+				<td class="contactus">
+					<ol class="map"><strong>TimeZone Pages</strong>
+						<li><a class="inText" href="alaska.html">Alaskan Zone</a></li>
+						<li><a class="inText" href="hawaii.html">Hawaiian Zone</a></li>
+						<li><a class="inText" href="pacific.html">Pacific Zone</a></li>
+						<li><a class="inText" href="mountain.html">Mountain Zone</a></li>
+						<li><a class="inText" href="central.html">Central Zone</a></li>
+						<li><a class="inText" href="eastern.html">Eastern Zone</a></li>
+					</ol>
+				</td>
+				<td class="contactus">
+					<ol class="map"><strong>Ingredient Pages</strong>
+						<li><a class="inText" href="seafood.html">Seafood Recipes</a></li>
+						<li><a class="inText" href="spamIng.html">Spam Recipes</a></li>
+					</ol>
+					<ol class="map"><strong>Recipe Pages</strong>
+						<li><a class="inText" href="salmon.html">Barbequed Salmon</a></li>
+						<li><a class="inText" href="ahi.html">Poke</a></li>
+						<li><a class="inText" href="spam.html">Spam musubi</a></li>
+					</ol>
+				</td>
+				<td class="contactus">
+					<ol class="map"><strong>Utility Pages</strong> 
+						<li><a class="inText" href="index.html">Home Page</a></li>
+						<li><a class="inText" href="register.html">Registration</a></li>
+						<li><a class="inText" href="contactus.html">Contact Us</a></li>
+					</ol>
+				</td>
+		
+		</table>
+		<p id="foot"><a class="inText" href="index.html">Home</a>	<a class="inText" href="sitemap.html">Site Map</a>	<a class="inText" href="register.html">Register</a>	<a class="inText" href="contactus.html">Contact Us</a></p>
+
+	</body>
+
+</html>

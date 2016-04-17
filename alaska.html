@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		
+		<title>
+			Alaska page
+		</title>
+		<script type="text/javascript" src="scripts.js"></script>
+		<link onload="styleHold()" id="style" type="text/css" rel="Stylesheet" href="style1.css" media="screen"></link>
+		
+		
+	</head>
+	<body onload="usertz()">
+		<h1 id="maintitle">US_TimeZone_Eats<input id="stCh" type="button" value="Change Style" onclick="styleChange()"/><input id="textStyle" type="button" value="Text Style" onclick="styleText()"/></br>
+		<span id="subtitle">Discover Favorite Recipes in the US by TimeZone</span></h1>
+		<h2 id="personaltz" >Your TimeZone is <span id="usertz"></span> and the Current Time is <span id="userdt"></span>
+		<table class="center" >
+			<tr>
+				<td colspan="1" class="menuCenter">
+					<select class="menu" size="1" onchange="select(this)">
+						<option>TimeZones</option>
+						<option value="alaska.html">Alaska</option>
+						<option value="hawaii.html">Hawaii</option>
+						<option value="pacific.html">Pacific</option>
+						<option value="mountain.html">Mountain</option>
+						<option value="central.html">Central</option>
+						<option value="eastern.html">Eastern</option>
+					</select>
+				</td>
+				<td colspan="1" class="menuCenter">
+					<select class="menu" size="1" onchange="select(this)">
+						<option>Recipes</option>
+						<option value="recipes/salmon.html">Barbecued Salmon</option>
+						<option value="recipes/ahi.html">Poke</option>
+						<option value="recipes/spam.html">Spam musubi</option>
+						<option value="recipes/pacificTimeZone.html">Pacific Recipe</option>
+						<option value="recipes/mountainTimeZone.html">Mountain Recipe</option>
+						<option value="recipes/centralTimeZone.html">Central Recipe</option>
+						<option value="recipes/easternTimeZone.html">Eastern Recipe</option>
+					</select>
+				</td>
+				<td colspan="1" class="menuCenter">
+					<select class="menu" size="1" onchange="select(this)">
+						<option>Ingredients</option>
+						<option value="seafood.html">Seafood</option>
+						<option value="spamIng.html">Spam</option>
+						<option value="random.html">Random</option>
+					</select>
+				</td>
+			</tr>
+		</table></h2>
+		<table class="center">
+			<tr>
+				<td id="chooseLine" colspan="3">You have chosen to explore the Alaskan TimeZone!</td>
+			</tr>
+			<tr>
+				<td colspan="1" class="row"><img src="images/AL_img.jpg" alt="State of Alaska"></img></td>
+				<td colspan="2" class="contactus">The Alaskan diet is based on locally grown produce and proteins.
+					Among the more dominant ingredients are Moose, Copper River Salmon, and Alaska King Crab.<br/> 
+					This recipe for <a class="inText" href="recipes/salmon.html">Barbecued Salmon</a> highlights one of the Alaska staples.</td>
+			</tr>
+			
+		</table>
+		
+		<p id="foot"><a class="inText" href="index.html">Home</a>	<a class="inText" href="sitemap.html">Site Map</a>	<a class="inText" href="register.html">Register</a>	<a class="inText" href="contactus.html">Contact Us</a></p>
+	</body>
+
+</html>
